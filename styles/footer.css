@@ -1,0 +1,58 @@
+footer {
+  display: block;
+  width: 100%;
+  background-color: darkblue;
+  color: white;
+}
+
+
+.footer-bar {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1024px;
+}
+
+
+.footer-links {
+  display: inline-block;
+  margin-top: 30px; /* TODO Check it */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+
+.copyright {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.copyright p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.copyright a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.copyright a:visited {
+  /* TODO */
+}

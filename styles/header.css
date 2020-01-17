@@ -1,0 +1,84 @@
+header {
+  display: block;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+
+.header-bar {
+  margin-right: auto;  /* Automatic margin center the element... */
+  margin-left: auto;
+  max-width: 1024px;
+}
+
+
+.site-logo {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.site-logo a {
+  text-decoration: none;
+}
+
+.site-logo a:visited {
+  color: inherit;
+}
+
+.site-logo a:hover {
+  /* TODO */
+}
+
+.site-logo .link-text {
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+
+.nav-bar {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: right;
+}
+
+.nav-bar ul {
+  list-style: none;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+}
+
+.nav-bar a:visited {
+  color: inherit;
+}
+
+.nav-bar a:hover {
+  /* TODO */
+}
+
+.nav-bar img {
+  vertical-align: middle;
+}
+
+.nav-bar .link-text {
+  vertical-align: middle;
+  font-weight: 100;
+}
+
+.nav-bar .current-page {
+  text-decoration: underline;
+}
