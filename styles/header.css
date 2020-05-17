@@ -1,5 +1,6 @@
 header {
   /* overflow: hidden; */
+  color: #000000;
 }
 
 header ul { /* Overwrite default properties... */
@@ -10,6 +11,10 @@ header ul { /* Overwrite default properties... */
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 0px;
+}
+
+header li {
+  display: inline-block;
 }
 
 header a {  /* Default properties for links inside the header... */
@@ -59,32 +64,32 @@ header a:hover {
   margin: auto;  /* Automatic margin centers the elements... */
 }
 
-.main-bar {
+.main-head-bar {
   overflow: hidden;
   background-color: #ffffff;
   color: #555555;
 }
 
-.main-bar a {
+.main-head-bar a {
   padding: 16px;
 }
 
-.main-bar a.current-path {
+.main-head-bar a.current-path {
   padding-bottom: 13px; /* Taking into account border space... */
 }
 
-.sub-bar {
+.sub-head-bar {
   overflow: hidden;
   background-color: #efefef;
   color: #555555;
   /* background-color: #98d2eb; */
 }
 
-.sub-bar a {
+.sub-head-bar a {
   padding: 8px;
 }
 
-.sub-bar a.current-path {
+.sub-head-bar a.current-path {
   padding-bottom: 5px;
 }
 
@@ -94,8 +99,4 @@ header a:hover {
 
 .nav-bar {
   float: right;
-}
-
-.nav-bar li {
-  display: inline-block;
 }

@@ -1,58 +1,61 @@
 footer {
+  color: #ffffff;
+}
+
+footer ul { /* Overwrite default properties... */
   display: block;
-  width: 100%;
-  background-color: darkblue;
-  color: white;
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 
-
-.footer-bar {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1024px;
-}
-
-
-.footer-links {
+footer li {
   display: inline-block;
-  margin-top: 30px; /* TODO Check it */
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  width: 100%;
 }
 
-.footer-links ul {
-  list-style: none;
-}
-
-.footer-links li {
-  display: inline-block;
-  margin-right: 8px;
-  margin-left: 8px;
-}
-
-
-.copyright {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  width: 100%;
-}
-
-.copyright p {
+footer p {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
-.copyright a {
-  font-size: inherit;
-  font-weight: inherit;
+footer a {
+  font-size: 16px;
+  font-weight: 300;
   color: inherit;
 }
 
-.copyright a:visited {
-  /* TODO */
+
+
+.bar-container {   /* Same selector in header.css. TODO Move it to a shared file... */
+  max-width: 1024px;
+  margin: auto;
+}
+
+.main-foot-bar {
+  background-color: #00008b;  /* That is darkblue... */
+}
+
+.links {
+  /*
+  XXX These properties have been commented because they make the object wider than browser window size, when this latter is resized!
+  display: inline-block;
+  width: 100%;
+  */
+  padding: 32px 16px 16px 16px;
+}
+
+.links a {
+  padding: 0px 8px;
+}
+
+.copyright {
+  padding: 16px 16px 32px 16px;
+}
+
+#year {
+  font-size: 16px;
+  font-weight: 300;
 }
