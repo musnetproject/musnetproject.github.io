@@ -60,18 +60,19 @@ header a:hover {
   align-items: center;
   justify-content: space-between;
   */
+  overflow: hidden;
   max-width: 1024px;
   margin: auto;  /* Automatic margin centers the elements... */
 }
 
 .main-head-bar {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #ffffff;
   color: #555555;
 }
 
 .main-head-bar a {
-  padding: 16px;
+  padding: 16px 8px;
 }
 
 .main-head-bar a.current-path {
@@ -79,7 +80,7 @@ header a:hover {
 }
 
 .sub-head-bar {
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #efefef;
   color: #555555;
   /* background-color: #98d2eb; */
@@ -95,8 +96,10 @@ header a:hover {
 
 .site-logo {
   float: left;
+  padding: 0px 8px;
 }
 
 .nav-bar {
   float: right;
+  padding: 0px 8px;
 }
