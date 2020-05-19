@@ -23,6 +23,7 @@ header a {  /* Default properties for links inside the header... */
   font-weight: 400;
   text-decoration: none;
   vertical-align: top;
+  transition: color 0.33s;
 }
 
 header a.current-path {
@@ -47,12 +48,10 @@ header a:visited {
 
 header a:hover {
   color: #000000;
-  transition: color 0.5s;
+  transition: color 0.33s;
 }
 
-
-
-.bar-container {
+header .bar-container {
   /*
   The following properties are useful for vertically center all child elements...
   Currently they are not necessary...
@@ -64,6 +63,8 @@ header a:hover {
   max-width: 1024px;
   margin: auto;  /* Automatic margin centers the elements... */
 }
+
+
 
 .main-head-bar {
   /* overflow: hidden; */

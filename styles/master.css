@@ -12,8 +12,8 @@
   padding-bottom: 0px;
   padding-left: 0px;
   /*
-    font-family: "Averta", "Monoid";
-    font-family: 'Hind';
+  font-family: "Averta", "Monoid";
+  font-family: 'Hind';
   */
   font-family: 'Avenir', sans-serif;
   font-style: normal;
@@ -21,12 +21,47 @@
   font-size: 18px;
 }
 
+ul { /* Overwrite default properties... */
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+li {
+  display: inline-block;
+}
+
 body {
-  /*
-    background-color: #409FFF;
-  */
+  /* background-color: #409FFF; */
+  background-attachment: fixed;
+  background: #ffffff;
+}
+
+@keyframes background-animation {
+  from  {
+    opacity: 0%;
+  }
+  to  {
+    opacity: 100%;
+  }
+}
+
+.inner-body {
   background: linear-gradient(150deg, #0030BF -50%, #4070FF 100%);
   background-attachment: fixed;
+  opacity: 0%;
+  /*
+  animation-name: background-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  */
+  animation: background-animation 0.66s ease-in-out forwards;
 }
 
 
@@ -36,33 +71,39 @@ body {
 
 
 .landing-content {
-  color: white;
+  color: #ffffff;
 }
 
-.landing-column {
+.column {
+  /*
   position: relative;
   margin-right: auto;
   margin-left: auto;
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   max-width: 1024px;
   min-height: 768px;
 }
 
-.landing-cell {
+.centered-cell {
+  /*
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  */
 }
 
-
-.landing-cell .headers {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.headers {
+  margin: 48px 0px 32px 0px;
 }
 
 .headers h1 {
-  display: block;
+  /* display: block; */
   font-size: 96px;
   font-weight: 900;
   text-align: center;
@@ -73,43 +114,33 @@ body {
   text-align: center;
 }
 
-
-.landing-cell .rectangle {
-  position: relative;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-bottom: 50px;
-  margin-left: auto;
-  width: 250px;
-  height: 50px;
-  border: 2px solid white;
+.landing-content .links {
+  display: flex;
+  /* margin: auto; */
+  margin: 32px 0px 48px 0px;
+  justify-content: center;
+  align-items: center;
 }
 
-.landing-cell .rectangle:hover {
-  background-color: white;
-  color: darkblue;
-}
-
-.landing-cell .link-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 400;
-  font-size: 32px;
-}
-
-.landing-cell a {
+.links a.button {
   display: inline-block;
-  height: 100%;
-  width: 100%;
-  color: inherit;
+  width: 256px;
+  height: 48px;
+  border: 2px solid white;
+  margin: 16px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 48px;
+  font-size: 24px;
+  transition: background-color 0.25s, color 0.25s;
 }
 
-.landing-cell a:visited {
-  color: inherit;
+.links a.button:hover {
+  background-color: #ffffff;
+  color: #0030BF;
+  transition: background-color 0.25s, color 0.25s;
 }
-
 
 /*
   XXX Footer style is defined in footer.css file!

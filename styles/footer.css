@@ -27,18 +27,12 @@ footer a {
   color: inherit;
 }
 
-
-
-.bar-container {   /* Same selector in header.css. TODO Move it to a shared file... */
+footer .bar-container {
   max-width: 1024px;
   margin: auto;
 }
 
-.main-foot-bar {
-  background-color: #00008b;  /* That is darkblue... */
-}
-
-.links {
+footer .links {
   /*
   XXX These properties have been commented because they make the object wider than browser window size, when this latter is resized!
   display: inline-block;
@@ -47,8 +41,14 @@ footer a {
   padding: 32px 16px 16px 16px;
 }
 
-.links a {
+footer .links a {
   padding: 0px 8px;
+}
+
+
+
+.main-foot-bar {
+  background-color: #00008b;  /* That is darkblue... */
 }
 
 .copyright {
