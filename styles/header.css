@@ -83,6 +83,7 @@ header .bar-container {
 .sub-head-bar {
   /* overflow: hidden; */
   background-color: #efefef;
+  /* background: linear-gradient(150deg, #efefef 0%, #dfdfdf 150%); */
   color: #555555;
   /* background-color: #98d2eb; */
 }

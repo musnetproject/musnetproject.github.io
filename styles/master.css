@@ -41,7 +41,7 @@ body {
   background: #ffffff;
 }
 
-@keyframes background-animation {
+@keyframes opacity-transition {
   from  {
     opacity: 0%;
   }
@@ -50,7 +50,7 @@ body {
   }
 }
 
-.inner-body {
+.animated-background {
   background: linear-gradient(150deg, #0030BF -50%, #4070FF 100%);
   background-attachment: fixed;
   opacity: 0%;
@@ -61,7 +61,7 @@ body {
   animation-iteration-count: 1;
   animation-play-state: running;
   */
-  animation: background-animation 0.66s ease-in-out forwards;
+  animation: opacity-transition 0.66s ease-in-out forwards;
 }
 
 
@@ -69,6 +69,11 @@ body {
   XXX Header style is defined in header.css file!
 */
 
+
+/*
+  XXX index.html file content styles...
+  ************************************************************
+*/
 
 .landing-content {
   color: #ffffff;
@@ -94,8 +99,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
   */
+  width: 100%;
 }
 
 .headers {
@@ -140,6 +145,76 @@ body {
   background-color: #ffffff;
   color: #0030BF;
   transition: background-color 0.25s, color 0.25s;
+}
+
+/*
+  XXX discover.html file content styles...
+  ************************************************************
+*/
+
+.generic-content {
+  color: black;
+}
+
+.generic-content .title {
+  padding: 16px;
+}
+
+.generic-content .text {
+  padding: 16px;
+}
+
+.generic-content h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.generic-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.generic-content p {
+  font-size: 20px;
+}
+
+.generic-content a {
+  font-size: 20px;
+  text-decoration: underline;
+  color: black;
+}
+
+.generic-content ul {
+  list-style-type: disc;
+}
+
+.generic-content li {
+  display: list-item;
+  margin: 8px 0px;
+}
+
+.generic-content a:visited {
+  font-size: 20px;
+  text-decoration: underline;
+  color: black;
+}
+
+.animated-text {
+  opacity: 0%;
+  /*
+  animation-name: background-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+  */
+  animation: opacity-transition 0.66s ease-in-out forwards;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  padding: 16px;
 }
 
 /*
